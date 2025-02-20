@@ -38,6 +38,7 @@ const Religious_Buildings = () => {
                         <a href="#services">Services</a>
                         <a href="#contact">Contact Us</a>
                         <a href="#contact">Contact Us</a>
+                        <a href="#contact">Contact Us</a>
                     </div>
                 </nav>
                 <div className='ProjectBox'>
