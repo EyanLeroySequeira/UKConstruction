@@ -1,0 +1,270 @@
+.project-container {
+    width: 100%;
+    /* height: 200px; */
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    padding: 10px;
+    z-index: 100;
+    width: 98.5%;
+
+    /* background: rgba(255, 255, 255, 0.1); */
+    /* backdrop-filter: blur(10px); */
+}
+
+.ProjectBox {
+    background-color: white;
+    position: absolute;
+    padding: 0px 90px;
+    bottom: 6px;
+    right: 0;
+    /* width: auto; */
+    max-width: 420px;
+    height: auto;
+    text-align: center;
+}
+
+.ResidentialText {
+
+    color: black;
+    font-size: 44px;
+    font-weight: 400;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.Companylogo {
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    color: white;
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+
+.hero-image {
+    width: 100%;
+    height: 700px;
+    margin-top: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.projectStatus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #1D4672;
+    margin-top: -6px;
+    position: relative;
+    flex: 4;
+    gap: 70px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 20px 120px;
+    color: white;
+}
+
+
+
+
+
+.projectStatus h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.projectStatus p {
+    font-size: 20px;
+}
+
+.text1 {
+    font-size: 24px;
+    padding: 60px 120px;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+/* Slick Slider Container */
+.center {
+    width: 100%;
+    margin: auto;
+    padding: 20px 120px;
+    overflow: hidden;
+}
+
+/* Individual Slide Styling */
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 1px 0 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.slide img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1300px) {
+
+
+    .slide img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .center {
+        padding: 20px 60px;
+    }
+
+    .text1 {
+        padding: 20px 60px;
+    }
+
+
+    .slide img {
+        height: 300px;
+    }
+
+    .slide {
+        padding: 0 60px;
+    }
+
+
+    .projectStatus {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 70px;
+        padding: 30px 60px;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+    }
+
+    .projectStatus div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .center {
+        padding: 20px 40px;
+    }
+
+    .slide {
+        margin: 10px 5px;
+
+    }
+
+    .slide img {
+        height: 250px;
+    }
+
+
+    .projectStatus {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        /* padding: 20px; */
+    }
+
+    .text1 {
+        font-size: 16px;
+        padding: 20px 30px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+    .ProjectBox {
+        padding: 0px 10px;
+
+    }
+
+    .ResidentialText {
+        font-size: 40px;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    .center {
+        padding: 20px 20px;
+    }
+
+    .slide {
+        margin: 8px 4px;
+        /* Maintain gap at smaller screens */
+    }
+
+    .slide img {
+        height: 250px;
+    }
+
+    .projectStatus {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        /* padding: 20px; */
+    }
+}
+
+
+/* Target even-numbered slides */
+.slick-slide:nth-child(even) {
+    margin-top: 60px;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
